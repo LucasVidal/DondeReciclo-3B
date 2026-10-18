@@ -10,10 +10,10 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
-  database: dr6
-  username: ats
-  password: test4321
-  host:     <%= ENV['ATUSERVICIO_DB_HOST'] %>
+  database: postgres
+  username: postgres
+  password: postgres
+  host:     <%= ENV['DB_HOST'] %>
 
   timeout: 5000
 

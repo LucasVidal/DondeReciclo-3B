@@ -1,0 +1,21 @@
+{
+	"name": "Ruby 2.6.3 & Rails with Postgres",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "app",
+	"workspaceFolder": "/workspace",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"rebornix.Ruby",
+				"castwide.solargraph",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	},
+	"forwardPorts": [
+		3000,
+		5432
+	],
+	"postCreateCommand": "bundle check || bundle install",
+	"remoteUser": "root"
+}
